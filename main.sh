@@ -4,7 +4,8 @@
 LOCAL_EPG_DIR="$HOME/epg"
 
 # Update 
-cd $LOCAL_EPG_DIR && git pull
+cd $LOCAL_EPG_DIR && \
+git pull
 
 # Execute wg++
 sh "$LOCAL_EPG_DIR/scripts/epg.sh" > "$LOCAL_EPG_DIR/scripts/epg.log" 2>&1
