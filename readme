@@ -14,5 +14,5 @@ Explanation:
 - main.sh is the actual job that you want to be bootstrapped
 
 To add more bootstraps, it's easy:
-1. Add a new script for execution
-2. Add a line in local.sh to download script #1 and execute it
+1. Upload a new script for execution
+2. Add a line in local.sh to download script #1 and execute it (accordingly to the script language, ie: sh script.sh, or python3 script.py)
