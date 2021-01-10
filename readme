@@ -9,8 +9,6 @@ root.sh
 |   |-- (other bootstraps)
 
 Explanation:
-- root.sh is a fixed script that downloads local.sh and always executes it, you will need to register it in your crontab at @restart. The scenario is that the server is always stopped and woken up by a schedule and it has to always execute root.sh.
+- root.sh is a fixed script that downloads local.sh and always executes it, you will need to register it in your crontab at @restart. The scenario is that the server is always stopped and woken up by a schedule and it has to always execute root.sh
 - local.sh acts as an entrypoint where you can add more scripts here to be downloaded, and also you can control its execution
 - main.sh is the actual job that you want to be bootstrapped
-
-
