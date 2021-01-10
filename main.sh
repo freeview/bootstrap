@@ -12,6 +12,8 @@ sh "$LOCAL_EPG_DIR/scripts/epg.sh" > "$LOCAL_EPG_DIR/scripts/epg.log" 2>&1
 
 # Get mono version for reference
 mono --version=number > "$LOCAL_EPG_DIR/scripts/mono-version.txt" 2>&1
+cd $LOCAL_EPG_DIR && \
+git add .
 
 # Commit 
 TIMESTAMP=`date`
