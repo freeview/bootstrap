@@ -22,5 +22,5 @@ git commit -am "wg++ run on $TIMESTAMP" && \
 git push
 
 # Shutdown
-sleep 30
+sleep 10
 sudo shutdown
