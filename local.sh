@@ -2,9 +2,9 @@
 
 BASE_URL_REPO="https://raw.githubusercontent.com/freeview/bootstrap"
 BRANCH="master"
-BOOTSTRAP_SCRIPT_MAIN="$BASE_URL_REPO/$BRANCH/main.sh"
+BOOTSTRAP_SCRIPT_MAIN="$BASE_URL_REPO/$BRANCH/actions/main.sh"
 
-curl "$BOOTSTRAP_SCRIPT_MAIN" -o "$HOME/main.sh"
+curl "$BOOTSTRAP_SCRIPT_MAIN" -o "$HOME/actions/main.sh"
 
 # Control toggle main.sh
-sh "$HOME/main.sh"
+sh "$HOME/actions/main.sh"
