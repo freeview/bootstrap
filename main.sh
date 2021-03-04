@@ -2,9 +2,13 @@
 
 # Dir placeholders
 LOCAL_EPG_DIR="$HOME/epg"
+SCRAPPR="$HOME/scrappr"
 
 # Update 
 cd $LOCAL_EPG_DIR && \
+git pull
+
+cd $SCRAPPR && \
 git pull
 
 # Execute wg++
@@ -15,9 +19,14 @@ mono --version > "$LOCAL_EPG_DIR/scripts/mono-version.txt" 2>&1
 cd $LOCAL_EPG_DIR && \
 git add .
 
-# Commit 
+# Commit if changes
 TIMESTAMP=`date`
 cd $LOCAL_EPG_DIR && \
+git commit -am "wg++ run on $TIMESTAMP" && \
+git push
+
+TIMESTAMP=`date`
+cd $SCRAPPR && \
 git commit -am "wg++ run on $TIMESTAMP" && \
 git push
 
